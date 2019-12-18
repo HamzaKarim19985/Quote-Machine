@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+body {
+  background: url("https://uploads.codesandbox.io/uploads/user/913fd57a-53c9-4258-bc19-cac08941a417/JVAh-abstract1.jpg")
+    center center no-repeat fixed;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+#text-box {
+  height: 200px;
+}
+
+#quote-box {
+  background: rgba(255, 255, 255, 0.2);
+  width: 50%;
+  margin: 150px auto 90px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#text {
+  margin: 0px 15px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+#author {
+  font-style: italic;
+  color: rgba(256, 256, 256, 0.7);
+  margin-left: 5px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(256, 256, 256, 0.7);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: rgba(256, 256, 256, 0.5);
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* Media queries **
+***************/
+@media screen and (max-width: 800px) {
+  #quote-box {
+    width: 95%;
+  }
+}
